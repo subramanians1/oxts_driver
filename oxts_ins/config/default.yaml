@@ -46,7 +46,7 @@ oxts_ins:
     imu_bias_topic          : "imu_bias"
     ### Publish Imu message
     pub_imu_flag            : true
-    imu_topic               : "imu"
+    imu_topic               : "imu_raw"
     ### Broadcast TF messages for rviz visualisation
     pub_tf_flag             : true
     ### Source of the local reference frame

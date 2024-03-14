@@ -22,7 +22,7 @@ def generate_launch_description():
     with open(driver_param_path, "r") as f:
         driver_params = yaml.safe_load(f)["oxts_driver"]["ros__parameters"]
     yaml_ncom = driver_params.pop("ncom", '""')
-    yaml_prefix = driver_params.pop("topic_prefix", "ins")
+    yaml_prefix = driver_params.pop("topic_prefix", "sensing/imu/tamagawa")
     yaml_ip = driver_params.pop("unit_ip","0.0.0.0")
     yaml_port = driver_params.pop("unit_port",3000)
     yaml_rate = driver_params.pop("ncom_rate",100)
